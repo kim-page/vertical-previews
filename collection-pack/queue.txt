@@ -1,0 +1,11 @@
+# Laptop collection queue — remaining cities after London (done on server 2026-09-22)
+# Format: slug|iso2|city|country|category|mode|status
+# Modes: collect (fresh find+fill+check) | fixlist (apply morning-tally fixes) | topup (verify existing + add to 12) | convert (html -> JSON + verify)
+# Status: pending | running | done | failed
+dublin|IE|Dublin|Ireland|RESEARCH-THEN-COLLECT|collect|pending
+queretaro|MX|Querétaro|Mexico|Epoxy Flooring Contractors|fixlist|pending
+kampala|UG|Kampala|Uganda|Commercial Solar Installers|fixlist|pending
+nairobi|KE|Nairobi|Kenya|Solar Installers|topup|pending
+lisbon|PT|Lisbon|Portugal|Renovation Contractors|topup|pending
+madrid|ES|Madrid|Spain|Solar Panel Installers|convert|pending
+
