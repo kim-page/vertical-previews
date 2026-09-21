@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Round 004 vertical previews — contact.page</title>
+<meta name="description" content="Preview gallery for contact.page round 004: five seats, five city×vertical missions, real collected data.">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #e2e8f0; line-height: 1.6; padding: 40px 16px; }
+main { max-width: 900px; margin: 0 auto; }
+h1 { font-size: 2rem; margin-bottom: 6px; color: #fff; }
+.sub { color: #94a3b8; margin-bottom: 8px; }
+.rule { color: #fbbf24; font-size: .95rem; margin-bottom: 32px; }
+.card { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 24px; margin-bottom: 18px; }
+.card.pending { border-style: dashed; opacity: .85; }
+.card h2 { font-size: 1.25rem; color: #fff; margin-bottom: 4px; }
+.meta { font-size: .88rem; color: #94a3b8; margin-bottom: 10px; }
+.badge { display: inline-block; font-size: .75rem; font-weight: 700; padding: 2px 10px; border-radius: 20px; background: #14532d; color: #86efac; margin-right: 6px; }
+.badge.thin { background: #713f12; color: #fde68a; }
+.note { font-size: .9rem; color: #cbd5e1; margin-bottom: 12px; }
+.links a { display: inline-block; margin-right: 10px; padding: 8px 16px; border-radius: 6px; font-size: .88rem; font-weight: 600; text-decoration: none; }
+.page { background: #38bdf8; color: #0f172a; }
+.data { background: transparent; color: #38bdf8; border: 1px solid #38bdf8; }
+footer { margin-top: 36px; font-size: .82rem; color: #64748b; }
+footer a { color: #94a3b8; }
+</style>
+</head>
+<body>
+<main>
+<h1>Round 004 — vertical missions (previews)</h1>
+<p class="sub">Five seats × five city×vertical combos. HTML + JSON per mission, rendered from the seats' real Phase-B data.</p>
+<p class="rule">Honesty rule in force: each page lists only what the seat could verify. Nobody padded to 12 — the counts below are the counts they earned.</p>
+
+<div class="card">
+<h2><span class="badge">8 verified</span> Nairobi × solar installers</h2>
+<p class="meta">Seat: Grok · long-tail: "solar system installation cost Nairobi"</p>
+<p class="note">WhatsApp-first independents incl. EPRA-licensed firms. Kiri spot-checked Solarsasa (solarsasa.com — phone and address match). Strongest build of the five.</p>
+<div class="links"><a class="page" href="grok-nairobi-solar-installers.html">View page</a><a class="data" href="grok-nairobi-solar-installers.json">JSON</a></div>
+</div>
+
+<div class="card">
+<h2><span class="badge thin">3 verified</span> Lisbon × English-speaking renovation contractors</h2>
+<p class="meta">Seat: Claude · long-tail: "renovation contractor Lisbon English speaking"</p>
+<p class="note">The thinnest market of the five — and the seat said so. High-confidence lead: Renest.pt (Alvará nº 103669-PAR on site; Kiri spot-checked renest.pt — real, expat-founded). Two medium-confidence firms with flags. Claude's "what was verified / not checked" card pattern is the model to copy.</p>
+<div class="links"><a class="page" href="claude-lisbon-renovation-contractors.html">View page</a><a class="data" href="claude-lisbon-renovation-contractors.json">JSON</a></div>
+</div>
+
+<div class="card">
+<h2><span class="badge thin">5 verified</span> Kampala × commercial solar installers</h2>
+<p class="meta">Seat: ChatGPT · long-tail: "commercial solar installers in Kampala"</p>
+<p class="note">Kiri spot-checked thunderenergysolutionz.com — live, phone matches. Quirk: the seat's JSON-LD lists only 3 of its 5 businesses; its FAQ shipped questions only. Normalise before production.</p>
+<div class="links"><a class="page" href="chatgpt-kampala-commercial-solar.html">View page</a><a class="data" href="chatgpt-kampala-commercial-solar.json">JSON</a></div>
+</div>
+
+<div class="card">
+<h2><span class="badge">10 verified</span> Querétaro × industrial epoxy flooring</h2>
+<p class="meta">Seat: NotebookLM · long-tail: "instalacion de pisos epoxicos industriales queretaro"</p>
+<p class="note">In Spanish — buyer guide, FAQ, glossary all in Spanish. Kiri spot-checked pisosepoxicosindustrialesqueretaro.com — live, on-topic. Quirk: card 4 (Grupo Tersi) links WhatsApp to a different number than its tel: link — re-verify before production.</p>
+<div class="links"><a class="page" href="notebooklm-queretaro-epoxy-flooring.html">View page</a><a class="data" href="notebooklm-queretaro-epoxy-flooring.json">JSON</a></div>
+</div>
+
+<div class="card pending">
+<h2><span class="badge thin">pending</span> San José × commercial cold rooms</h2>
+<p class="meta">Seat: Gemini — blocked (errored, then refused 3×; zero output)</p>
+<p class="note">Awaiting Kim's call: retry Gemini later or reassign to another seat. Missions stay unique — a second mission for one seat doesn't violate the never-competing rule.</p>
+</div>
+
+<footer>
+<p>Previews of round-004B seat data, published for Kim's review. Not production pages. Repo: <a href="https://github.com/kim-page/vertical-previews">kim-page/vertical-previews</a>.</p>
+</footer>
+</main>
+</body>
+</html>
