@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roundtable Seat Launcher</title>
+<style>
+  body { font-family: system-ui, sans-serif; background: #111; color: #eee; margin: 0; padding: 32px; }
+  h1 { font-size: 22px; margin-bottom: 6px; }
+  p { color: #999; margin-top: 0; margin-bottom: 24px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; max-width: 900px; }
+  a.seat { display: block; background: #1e1e1e; border: 1px solid #333; border-radius: 12px;
+           padding: 20px 16px; text-decoration: none; color: #eee; }
+  a.seat:hover { background: #2a2a2a; border-color: #555; }
+  a.seat b { display: block; font-size: 17px; margin-bottom: 4px; }
+  a.seat span { font-size: 13px; color: #999; }
+</style>
+</head>
+<body>
+  <h1>🪑 Roundtable seats</h1>
+  <p>Signed in as <b>Page Contact</b> (page@interquess.com). Click each seat to open it in a new tab.</p>
+  <div class="grid">
+    <a class="seat" href="https://grok.com" target="_blank" rel="noopener"><b>Grok</b><span>flagship · SuperGrok</span></a>
+    <a class="seat" href="https://chatgpt.com" target="_blank" rel="noopener"><b>ChatGPT</b><span>free tier</span></a>
+    <a class="seat" href="https://claude.ai/new" target="_blank" rel="noopener"><b>Claude</b><span>Sonnet · senior seat</span></a>
+    <a class="seat" href="https://gemini.google.com" target="_blank" rel="noopener"><b>Gemini</b><span>flagship</span></a>
+    <a class="seat" href="https://aistudio.google.com/prompts/new_chat" target="_blank" rel="noopener"><b>AI Studio</b><span>Gemini 3.8 Flash</span></a>
+    <a class="seat" href="https://www.kimi.ai/" target="_blank" rel="noopener"><b>Kimi</b><span>K3</span></a>
+    <a class="seat" href="https://notebooklm.google.com" target="_blank" rel="noopener"><b>NotebookLM</b><span>research</span></a>
+    <a class="seat" href="https://chat.z.ai/" target="_blank" rel="noopener"><b>Z.ai</b><span>GLM-5.3</span></a>
+    <a class="seat" href="https://chat.qwen.ai/" target="_blank" rel="noopener"><b>Qwen</b><span>Qwen3.8-Max</span></a>
+  </div>
+</body>
+</html>
