@@ -4,7 +4,8 @@
 #
 # Setup (one time, in PowerShell):
 #   mkdir C:\Users\kim\contact-collection; cd C:\Users\kim\contact-collection
-#   # download loop.ps1 + queue.txt into this folder
+#   # download loop.ps1 into this folder - the queue now lives in the Google
+#   # Sheet "Queue" tab, fetched fresh every cycle (no login needed)
 #   grok -p "say GROK-READY"     # should print GROK-READY
 # Run:
 #   powershell -ExecutionPolicy Bypass -File .\loop.ps1
@@ -19,7 +20,8 @@
 $ErrorActionPreference = 'Stop'
 $Base    = Split-Path -Parent $MyInvocation.MyCommand.Path
 $Grok    = if ($env:GROK_BIN) { $env:GROK_BIN } else { 'grok' }
-$Queue   = Join-Path $Base 'queue.txt'
+$Queue   = Join-Path $Base 'queue.txt'   # local cache - re-synced from the sheet every cycle
+$QueueCsvUrl = 'https://docs.google.com/spreadsheets/d/14MKijeYA4rdRKMTX2LkL2bsFv7CVYUvhcbjaYF3ZSaU/gviz/tq?tqx=out:csv&sheet=Queue'
 $Log     = Join-Path $Base 'loop.log'
 $Tally   = Join-Path $Base 'loop-tally.md'
 $TimeoutMs   = 1800 * 1000   # 30 min per grok run, then kill and move on
@@ -46,6 +48,37 @@ function Set-Status($slug, $status) {
     if ($p[0] -eq $slug) { $p[6] = $status; ($p -join '|') } else { $_ }
   }
   $lines | Set-Content $Queue
+}
+
+$SheetToLocal = @{ Backlog='pending'; Doing='running'; Done='done'; Verified='verified'; Failed='failed' }
+
+function Sync-Queue {
+  # Fetch the live queue from the sheet's Queue tab; merge so locally-finished
+  # work is never resurrected. Runs before every cycle, so edits Kim makes in
+  # the sheet (reorder, skip, add a city) take effect on the next task.
+  $csv = Invoke-RestMethod -Uri $QueueCsvUrl
+  $rows = @($csv | ConvertFrom-Csv | Where-Object { $_.Slug -and $_.Slug.Trim() -ne '' })
+  $local = @{}
+  if (Test-Path $Queue) {
+    Get-Content $Queue | ForEach-Object {
+      $t = $_.TrimEnd()
+      if ($t -match '^#' -or $t -eq '') { return }
+      $p = $t -split '\|'
+      if ($p.Count -ge 7) { $local[$p[0]] = $p[6] }
+    }
+  }
+  $out = @('# Synced from the sheet Queue tab - do not hand-edit; edit the sheet instead')
+  foreach ($r in $rows) {
+    $slug = $r.Slug.Trim()
+    $status = $SheetToLocal[$r.Status.Trim()]
+    if (-not $status) { $status = 'pending' }
+    if ($local.ContainsKey($slug) -and $local[$slug] -match '^(done|failed|verified)$') {
+      $status = $local[$slug]   # never resurrect finished work
+    }
+    $out += ($slug, $r.ISO.Trim(), $r.City.Trim(), $r.Country.Trim(), $r.Category.Trim(), $r.Mode.Trim(), $status) -join '|'
+  }
+  $out | Set-Content $Queue
+  Beat "QUEUE SYNC - $($rows.Count) rows from sheet"
 }
 
 function Get-ContractLine {
@@ -172,13 +205,14 @@ function Test-Result($slug) {
 
 # --- preflight ---
 if (-not (Get-Command $Grok -ErrorAction SilentlyContinue)) { Write-Host "ERROR: grok CLI not found ('$Grok'). Fix PATH or set GROK_BIN."; exit 1 }
-if (-not (Test-Path $Queue)) { Write-Host "ERROR: queue.txt not found in $Base."; exit 1 }
+try { Sync-Queue } catch { Write-Host "ERROR: could not fetch the queue from the sheet: $($_.Exception.Message)"; exit 1 }
 
 $pending = @(Get-Content $Queue | Where-Object { $_ -match '\|pending$' }).Count
 Beat "LOOP START - $pending tasks pending"
 "# Laptop loop tally - $(Get-Date -Format 'yyyy-MM-dd')" | Set-Content $Tally
 
 while (@(Get-Content $Queue | Where-Object { $_ -match '\|pending$' }).Count -gt 0) {
+  Sync-Queue   # pick up any sheet edits (reorder / skip / add) before each task
   $line = (Get-Content $Queue | Where-Object { $_ -match '\|pending$' } | Select-Object -First 1).TrimEnd()
   $p = $line -split '\|'
   $slug, $iso, $city, $country, $category, $mode = $p[0], $p[1], $p[2], $p[3], $p[4], $p[5]
