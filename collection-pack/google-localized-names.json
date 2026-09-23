@@ -1,0 +1,1219 @@
+{
+ "gcid:accountant": {
+  "id": "Akuntan & pembukuan",
+  "ms": "Akauntan",
+  "th": "นักบัญชี"
+ },
+ "gcid:adult_entertainment_store": {
+  "id": "Toko dewasa",
+  "th": "เซ็กส์ช็อป"
+ },
+ "gcid:advertising_agency": {
+  "id": "agen periklanan",
+  "ms": "agensi pengiklanan",
+  "th": "บริษัทโฆษณา"
+ },
+ "gcid:agriculture": {
+  "id": "pertanian",
+  "ms": "pertanian",
+  "th": "เกษตรกรรม"
+ },
+ "gcid:air_conditioning_contractor": {
+  "id": "pemanasan, sirkulasi, dan penyejuk udara",
+  "th": "ผู้รับเหมาติดตั้งเครื่องปรับอากาศ"
+ },
+ "gcid:airline": {
+  "id": "maskapai penerbangan",
+  "ms": "syarikat penerbangan",
+  "th": "สายการบิน"
+ },
+ "gcid:airport": {
+  "id": "bandar udara",
+  "ms": "lapangan terbang",
+  "th": "สนามบิน"
+ },
+ "gcid:american_restaurant": {
+  "th": "ภัตตาคารอาหารอเมริกัน"
+ },
+ "gcid:amusement_center": {
+  "th": "ศูนย์กิจกรรมเพื่อความบันเทิง"
+ },
+ "gcid:amusement_park": {
+  "id": "Taman bermain",
+  "ms": "taman hiburan",
+  "th": "สวนสนุก"
+ },
+ "gcid:animal_hospital": {
+  "th": "โรงพยาบาลสัตว์"
+ },
+ "gcid:apartment_building": {
+  "id": "bangunan",
+  "th": "บริษัทบริหารอพาร์ทเม้นท์"
+ },
+ "gcid:appliance_store": {
+  "th": "ร้านเครื่องใช้ไฟฟ้าภายในบ้าน"
+ },
+ "gcid:aquarium_shop": {
+  "th": "ร้านขายอุปกรณ์เลี้ยงปลาตู้"
+ },
+ "gcid:architect": {
+  "id": "arsitek",
+  "ms": "Arkitek / Jurubina",
+  "th": "สถาปนิก"
+ },
+ "gcid:art_gallery": {
+  "id": "galeri seni",
+  "ms": "galeri seni",
+  "th": "ห้องแสดงงานศิลปะ"
+ },
+ "gcid:asian_restaurant": {
+  "th": "ภัตตาคารอาหารเอเชีย"
+ },
+ "gcid:atm": {
+  "id": "ATM",
+  "ms": "Mesin juruwang automatik",
+  "th": "ตู้เอทีเอ็ม"
+ },
+ "gcid:auto_parts_store": {
+  "th": "ร้านอะไหล่รถยนต์"
+ },
+ "gcid:baby_store": {
+  "th": "ร้านสินค้าเด็กอ่อน"
+ },
+ "gcid:badminton_complex": {
+  "id": "lapangan bulu tangkis",
+  "th": "สนามแบดมินตัน คอมเพล็กซ์"
+ },
+ "gcid:bakery": {
+  "id": "Toko roti",
+  "ms": "Kedai membuat roti",
+  "th": "ร้านเบเกอรี่"
+ },
+ "gcid:bank": {
+  "id": "Bank",
+  "ms": "bank",
+  "th": "ธนาคาร"
+ },
+ "gcid:bar": {
+  "id": "Bar",
+  "th": "บาร์"
+ },
+ "gcid:bar_and_grill": {
+  "th": "บาร์ & กริลล์"
+ },
+ "gcid:barbecue_restaurant": {
+  "th": "ร้านบาร์บีคิว"
+ },
+ "gcid:beach": {
+  "id": "pantai",
+  "ms": "pantai",
+  "th": "หาด"
+ },
+ "gcid:beauty_salon": {
+  "id": "Salon",
+  "th": "สถานเสริมความงาม"
+ },
+ "gcid:bicycle_store": {
+  "ms": "kedai basikal",
+  "th": "ร้านจักรยาน"
+ },
+ "gcid:book_store": {
+  "id": "toko buku",
+  "ms": "kedai buku",
+  "th": "ร้านหนังสือ"
+ },
+ "gcid:boutique": {
+  "id": "Boutique",
+  "ms": "Boutique",
+  "th": "ร้านบูติก"
+ },
+ "gcid:bowling_alley": {
+  "th": "โรงโบว์ลิ่ง"
+ },
+ "gcid:bridal_shop": {
+  "th": "ร้านเจ้าสาว"
+ },
+ "gcid:buddhist_temple": {
+  "id": "Vihara",
+  "ms": "Kuil Buddha",
+  "th": "วัด"
+ },
+ "gcid:budget_accommodation": {
+  "id": "Losmen",
+  "ms": "asrama",
+  "th": "หอพักสงเคราะห์"
+ },
+ "gcid:budget_hotel": {},
+ "gcid:buffet_restaurant": {
+  "th": "ภัตตาคารอาหารบุฟเฟต์"
+ },
+ "gcid:building_construction_contractor": {
+  "id": "Kontraktor",
+  "th": "ผู้รับจ้างก่อสร้าง"
+ },
+ "gcid:building_materials_store": {
+  "id": "Bahan bangunan",
+  "ms": "bahan binaan",
+  "th": "ร้านวัสดุก่อสร้าง"
+ },
+ "gcid:bus_charter": {
+  "th": "บริษัทรถบัสเช่าเหมาลำ"
+ },
+ "gcid:bus_station": {
+  "id": "terminal bus",
+  "ms": "stesen bas",
+  "th": "สถานีรถโดยสารประจำทาง"
+ },
+ "gcid:bus_stop": {
+  "id": "tempat perhentian bus",
+  "ms": "perhentian bas"
+ },
+ "gcid:business_center": {
+  "id": "Serviced office",
+  "th": "ศูนย์ธุรกิจ"
+ },
+ "gcid:business_management_consultant": {
+  "id": "konsultan manajemen",
+  "th": "ที่ปรึกษาด้านการจัดการธุรกิจ"
+ },
+ "gcid:cafe": {
+  "id": "Kafe",
+  "ms": "kedai kopi",
+  "th": "ร้านกาแฟ"
+ },
+ "gcid:camera_store": {
+  "th": "ร้านกล้องถ่ายรูป"
+ },
+ "gcid:car_dealer": {
+  "id": "Dealer mobil",
+  "th": "ธุรกิจตัวแทนจำหน่ายรถยนต์"
+ },
+ "gcid:car_rental_agency": {
+  "id": "persewaan mobil",
+  "ms": "Kereta sewa",
+  "th": "บริษัทรถเช่า"
+ },
+ "gcid:car_repair": {
+  "th": "ซ่อมรถยนต์และบำรุงรักษา"
+ },
+ "gcid:car_wash": {
+  "th": "บริการล้างรถ"
+ },
+ "gcid:casino": {
+  "id": "kasino",
+  "ms": "kasino",
+  "th": "คาสิโน"
+ },
+ "gcid:catering_service": {
+  "th": "รับจัดอาหารนอกสถานที่"
+ },
+ "gcid:cell_phone_store": {
+  "th": "ร้านโทรศัพท์มือถือ"
+ },
+ "gcid:cemetery": {
+  "id": "tempat pemakaman",
+  "ms": "perkuburan",
+  "th": "สุสาน"
+ },
+ "gcid:childrens_clothing_store": {
+  "id": "pakaian anak",
+  "ms": "Kedai Pakaian Kanak-Kanak",
+  "th": "ร้านเสื้อผ้าเด็ก"
+ },
+ "gcid:chinese_restaurant": {
+  "th": "ภัตตาคารอาหารจีน"
+ },
+ "gcid:church": {
+  "id": "gereja",
+  "ms": "bangunan gereja",
+  "th": "คริสต์ศาสนสถาน"
+ },
+ "gcid:city_government_office": {
+  "id": "Balai kota",
+  "ms": "dewan perbandaran",
+  "th": "ที่ว่าการเมือง"
+ },
+ "gcid:cleaning_service": {
+  "id": "Jasa kebersihan komersial"
+ },
+ "gcid:clothing_store": {
+  "id": "Toko Pakaian",
+  "th": "ร้านเสื้อผ้า"
+ },
+ "gcid:coffee_shop": {
+  "id": "kafe",
+  "ms": "kedai kopi",
+  "th": "ร้านกาแฟ"
+ },
+ "gcid:coffee_store": {
+  "th": "ร้านอุปกรณ์กาแฟ"
+ },
+ "gcid:college": {
+  "id": "kolese",
+  "ms": "kolej",
+  "th": "วิทยาลัย"
+ },
+ "gcid:commercial_printer": {
+  "th": "โรงพิมพ์"
+ },
+ "gcid:community_center": {
+  "id": "pusat komunitas",
+  "ms": "pusat masyarakat",
+  "th": "ศูนย์ชุมชน"
+ },
+ "gcid:computer_store": {
+  "th": "ร้านคอมพิวเตอร์"
+ },
+ "gcid:condominium_complex": {
+  "th": "กลุ่มอาคารคอนโดมิเนียม"
+ },
+ "gcid:conference_center": {
+  "id": "Pusat konvensi",
+  "ms": "pusat konvensyen",
+  "th": "ศูนย์ประชุม"
+ },
+ "gcid:construction_company": {
+  "th": "บริษัทรับเหมาก่อสร้าง"
+ },
+ "gcid:consultant": {
+  "id": "konsultan",
+  "ms": "perunding",
+  "th": "ที่ปรึกษา"
+ },
+ "gcid:consultants": {
+  "id": "konsultan manajemen"
+ },
+ "gcid:convenience_store": {
+  "id": "Toko kelontong",
+  "ms": "Kedai serbaneka",
+  "th": "ร้านสะดวกซื้อ"
+ },
+ "gcid:cooking_class": {
+  "th": "สถานที่สอนทำอาหาร"
+ },
+ "gcid:cosmetics_store": {
+  "id": "Salon",
+  "th": "ร้านเครื่องสำอาง"
+ },
+ "gcid:costume_rental_service": {
+  "th": "บริการให้เช่าเครื่องแต่งกาย"
+ },
+ "gcid:county_government_office": {
+  "th": "สำนักงานสภาองค์กรส่วนท้องถิ่น"
+ },
+ "gcid:courthouse": {
+  "id": "gedung pengadilan",
+  "ms": "bangunan mahkamah"
+ },
+ "gcid:craft_store": {
+  "th": "ร้านงานฝีมือ"
+ },
+ "gcid:credit_union": {
+  "ms": "bank koperasi",
+  "th": "สหกรณ์เครดิตยูเนียน"
+ },
+ "gcid:currency_exchange_service": {
+  "th": "บริการรับแลกเปลี่ยนเงินตรา"
+ },
+ "gcid:dance_school": {
+  "th": "โรงเรียนสอนเต้นรำ"
+ },
+ "gcid:dating_club": {},
+ "gcid:day_care_center": {
+  "th": "ศูนย์รับเลี้ยงเด็ก"
+ },
+ "gcid:deli": {
+  "id": "Deli",
+  "ms": "Deli",
+  "th": "ร้านเดลี"
+ },
+ "gcid:dental_clinic": {
+  "th": "คลินิกทันตกรรม"
+ },
+ "gcid:dentist": {
+  "id": "dokter gigi",
+  "ms": "doktor gigi",
+  "th": "ทันตแพทย์"
+ },
+ "gcid:department_store": {
+  "id": "toko serba ada",
+  "ms": "gedung serbaneka",
+  "th": "ห้างสรรพสินค้า"
+ },
+ "gcid:dermatologist": {
+  "th": "แพทย์ผู้เชี่ยวชาญด้านโรคผิวหนัง"
+ },
+ "gcid:dessert_shop": {
+  "id": "Patiseri",
+  "ms": "Pâtisserie",
+  "th": "ร้านของหวาน"
+ },
+ "gcid:diner": {
+  "id": "Diner",
+  "ms": "Diner",
+  "th": "ร้านอาหารขนาดเล็กแบบอเมริกัน"
+ },
+ "gcid:disabled_sports_center": {
+  "id": "olahraga difabel",
+  "th": "ศูนย์กีฬาคนพิการ"
+ },
+ "gcid:dive_shop": {
+  "th": "ร้านอุปกรณ์ดำน้ำ"
+ },
+ "gcid:diving_center": {
+  "th": "ศูนย์ดำน้ำ"
+ },
+ "gcid:doctor": {
+  "id": "Dokter",
+  "ms": "pengamal perubatan",
+  "th": "แพทย์"
+ },
+ "gcid:drivers_license_office": {
+  "id": "Departemen kendaraan bermotor",
+  "th": "สำนักงานใบอนุญาตขับรถ"
+ },
+ "gcid:dry_cleaner": {
+  "th": "ร้านซักแห้ง"
+ },
+ "gcid:educational_consultant": {
+  "th": "ที่ปรึกษาด้านการศึกษา"
+ },
+ "gcid:electrical_supply_store": {
+  "th": "ร้านจำหน่ายอุปกรณ์ไฟฟ้า"
+ },
+ "gcid:electrician": {
+  "id": "Teknisi listrik komersial",
+  "th": "ช่างไฟฟ้า"
+ },
+ "gcid:electronics_store": {
+  "id": "Toko Elektronik",
+  "th": "ร้านอุปกรณ์อิเล็กทรอนิกส์"
+ },
+ "gcid:elementary_school": {
+  "id": "sekolah dasar",
+  "ms": "sekolah rendah",
+  "th": "โรงเรียนประถมศึกษา"
+ },
+ "gcid:embassy": {
+  "id": "kedutaan besar",
+  "ms": "kedutaan besar",
+  "th": "สถานทูต"
+ },
+ "gcid:employment_agency": {
+  "th": "ตัวแทนจัดหางาน"
+ },
+ "gcid:engineering_consultant": {
+  "th": "ที่ปรึกษาด้านวิศวกรรม"
+ },
+ "gcid:engineering_service": {},
+ "gcid:entertainment": {
+  "id": "hiburan",
+  "ms": "hiburan",
+  "th": "การบันเทิง"
+ },
+ "gcid:entertainment_agency": {
+  "id": "agensi bakat",
+  "ms": "agensi bakat",
+  "th": "บริษัทด้านความบันเทิง"
+ },
+ "gcid:equipment_rental_agency": {
+  "th": "สำนักงานให้เช่าอุปกรณ์"
+ },
+ "gcid:escort_service": {},
+ "gcid:event_planner": {
+  "th": "นักวางแผนงานอีเวนต์"
+ },
+ "gcid:event_ticket_seller": {
+  "th": "ผู้จัดจำหน่ายตั๋วกิจกรรม"
+ },
+ "gcid:event_venue": {
+  "ms": "tempat acara",
+  "th": "สถานที่จัดกิจกรรม"
+ },
+ "gcid:eye_care_center": {
+  "th": "ศูนย์รักษาสายตา"
+ },
+ "gcid:fabric_store": {
+  "th": "ร้านขายผ้า"
+ },
+ "gcid:factory": {
+  "id": "pabrik",
+  "ms": "kilang",
+  "th": "โรงงาน"
+ },
+ "gcid:family_practice_physician": {
+  "th": "แพทย์เวชปฏิบัติครอบครัว"
+ },
+ "gcid:family_restaurant": {
+  "th": "ร้านอาหารครอบครัว"
+ },
+ "gcid:fashion_accessories_store": {
+  "id": "Aksesori",
+  "ms": "perhiasan kostum",
+  "th": "ร้านขายสินค้าแฟชั่น"
+ },
+ "gcid:fast_food_restaurant": {
+  "id": "Rumah makan siap saji",
+  "ms": "restoran makanan segera",
+  "th": "อาหารฟาสต์ฟูด"
+ },
+ "gcid:feng_shui_consultant": {
+  "id": "Feng Shui",
+  "ms": "Feng shui",
+  "th": "ที่ปรึกษาด้านฮวงจุ้ย"
+ },
+ "gcid:ferry_service": {
+  "th": "ผู้ให้บริการเรือข้ามฟาก"
+ },
+ "gcid:financial_consultant": {
+  "th": "ที่ปรึกษาด้านการเงิน"
+ },
+ "gcid:financial_planner": {
+  "id": "Financial Planner",
+  "th": "นักวางแผนด้านการเงิน"
+ },
+ "gcid:fire_station": {
+  "id": "Stasiun pemadam kebakaran",
+  "ms": "balai bomba",
+  "th": "สถานีดับเพลิง"
+ },
+ "gcid:florist": {
+  "th": "ร้านดอกไม้"
+ },
+ "gcid:food_delivery": {
+  "id": "Pengantaran makanan",
+  "ms": "Penghantaran makanan"
+ },
+ "gcid:food_products_supplier": {
+  "id": "Distribusi pangan",
+  "ms": "pengedaran makanan",
+  "th": "ผู้ผลิตสินค้าอาหาร"
+ },
+ "gcid:freight_forwarding_service": {
+  "id": "Jasa angkutan & logistik",
+  "th": "บริการขนส่งสินค้า"
+ },
+ "gcid:french_restaurant": {
+  "th": "ภัตตาคารอาหารฝรั่งเศส"
+ },
+ "gcid:funeral_home": {
+  "id": "Rumah duka",
+  "ms": "Rumah pengebumian",
+  "th": "บริการจัดงานศพ"
+ },
+ "gcid:furniture_store": {
+  "th": "ร้านเฟอร์นิเจอร์"
+ },
+ "gcid:gas_station": {
+  "id": "Pom bensin/SPBU",
+  "th": "สถานีบริการน้ำมัน"
+ },
+ "gcid:general_contractor": {
+  "id": "Kontraktor",
+  "th": "ผู้รับเหมาก่อสร้าง"
+ },
+ "gcid:general_store": {
+  "id": "toko palugada",
+  "th": "ร้านของชำ"
+ },
+ "gcid:gift_shop": {
+  "id": "Toko cendera mata",
+  "ms": "Kedai cenderamata",
+  "th": "ร้านกิฟต์ชอป"
+ },
+ "gcid:goldsmith": {
+  "id": "Goldsmith",
+  "ms": "Goldsmith",
+  "th": "ช่างทอง"
+ },
+ "gcid:golf_club": {
+  "id": "Tongkat golf",
+  "ms": "Klub golf",
+  "th": "สโมสรกอล์ฟ"
+ },
+ "gcid:golf_course": {
+  "id": "Fairway",
+  "th": "สนามกอล์ฟ"
+ },
+ "gcid:government_agency": {
+  "id": "lembaga negara",
+  "ms": "badan kerajaan",
+  "th": "หน่วยงานราชการ"
+ },
+ "gcid:government_office": {
+  "id": "jabatan politik",
+  "ms": "jawatan awam",
+  "th": "สถานที่ราชการ"
+ },
+ "gcid:governmentagency": {
+  "id": "lembaga negara",
+  "ms": "badan kerajaan",
+  "th": "หน่วยงานราชการ"
+ },
+ "gcid:graphic_designer": {
+  "id": "Perancang grafis",
+  "ms": "pereka grafik",
+  "th": "กราฟฟิคดีไซเนอร์"
+ },
+ "gcid:grocery_store": {
+  "id": "Toko bahan makanan",
+  "ms": "Kedai runcit",
+  "th": "ร้านขายของชำ"
+ },
+ "gcid:guest_house": {
+  "id": "wisma",
+  "th": "เกสท์เฮ้าส์"
+ },
+ "gcid:gym": {
+  "id": "Tempat Fitness",
+  "ms": "Gimnastik",
+  "th": "สถานออกกำลังกาย"
+ },
+ "gcid:hair_salon": {
+  "th": "ร้านทำผม"
+ },
+ "gcid:hardware_store": {
+  "id": "Toko perangkat keras",
+  "th": "ร้านขายอุปกรณ์ฮาร์ดแวร์"
+ },
+ "gcid:health_food_store": {
+  "th": "ร้านอาหารเพื่อสุขภาพ"
+ },
+ "gcid:high_school": {
+  "id": "sekolah menengah atas",
+  "ms": "sekolah tinggi",
+  "th": "โรงเรียนมัธยมศึกษา"
+ },
+ "gcid:hindu_temple": {
+  "id": "Tempat suci Hindu",
+  "ms": "Kuil Hindu",
+  "th": "โบสถ์ของศาสนาฮินดู"
+ },
+ "gcid:home_goods_store": {
+  "id": "Toko Perlengkapan Rumah",
+  "th": "ร้านขายเครื่องใช้ในบ้าน"
+ },
+ "gcid:hospital": {
+  "id": "Rumah Sakit",
+  "ms": "hospital",
+  "th": "โรงพยาบาล"
+ },
+ "gcid:hospitals": {},
+ "gcid:hostel": {
+  "id": "Losmen",
+  "ms": "asrama",
+  "th": "โฮสเทล"
+ },
+ "gcid:hotel": {
+  "id": "Hotel",
+  "ms": "hotel",
+  "th": "โรงแรม"
+ },
+ "gcid:housing_development": {
+  "ms": "Pembangunan perumahan",
+  "th": "โครงการที่อยู่อาศัย"
+ },
+ "gcid:import_export_company": {
+  "id": "Perusahaan Ekspor-Impor",
+  "th": "บริษัทนำเข้าส่งออก"
+ },
+ "gcid:indian_restaurant": {
+  "ms": "Restoran India",
+  "th": "ภัตตาคารอาหารอินเดีย"
+ },
+ "gcid:indoor_playground": {
+  "th": "สนามเด็กเล่นในร่ม"
+ },
+ "gcid:industrial_area": {
+  "id": "Kawasan industri",
+  "ms": "Taman industri"
+ },
+ "gcid:industrial_equipment_supplier": {
+  "th": "ผู้จัดจำหน่ายอุปกรณ์อุตสาหกรรม"
+ },
+ "gcid:insurance_agency": {
+  "id": "Broker asuransi bisnis",
+  "th": "บริษัทประกันภัย"
+ },
+ "gcid:interior_construction_contractor": {
+  "th": "ผู้รับเหมาก่อสร้างภายในอาคาร"
+ },
+ "gcid:interior_designer": {
+  "ms": "pereka bentuk dalaman",
+  "th": "นักออกแบบตกแต่งภายใน"
+ },
+ "gcid:internet_marketing_service": {
+  "id": "pemasaran digital",
+  "ms": "pemasaran digital",
+  "th": "บริการการตลาดอินเทอร์เน็ต"
+ },
+ "gcid:internet_service_provider": {
+  "id": "penyedia jasa Internet",
+  "ms": "pembekal khidmat Internet",
+  "th": "ผู้ให้บริการอินเทอร์เน็ต"
+ },
+ "gcid:internist": {
+  "id": "dokter spesialis penyakit dalam",
+  "ms": "pakar perubatan dalaman",
+  "th": "อายุรแพทย์"
+ },
+ "gcid:italian_restaurant": {
+  "th": "ร้านอาหารอิตาเลียน"
+ },
+ "gcid:japanese_restaurant": {
+  "th": "ภัตตาคารอาหารญี่ปุ่น"
+ },
+ "gcid:jeweler": {
+  "id": "perancang perhiasan",
+  "th": "ผู้ค้าเครื่องประดับ"
+ },
+ "gcid:kindergarten": {
+  "id": "Taman Kanak-kanak",
+  "ms": "tadika",
+  "th": "โรงเรียนอนุบาล"
+ },
+ "gcid:korean_restaurant": {
+  "th": "ภัตตาคารอาหารเกาหลี"
+ },
+ "gcid:landscaper": {
+  "id": "Jasa lansekap komersial",
+  "th": "นักภูมิทัศน์"
+ },
+ "gcid:laundry_service": {
+  "th": "บริการซักรีด"
+ },
+ "gcid:lawyer": {
+  "id": "pengacara",
+  "ms": "peguam",
+  "th": "นักกฎหมาย"
+ },
+ "gcid:legal_services": {
+  "th": "บริการทางกฎหมาย"
+ },
+ "gcid:library": {
+  "th": "ห้องสมุด"
+ },
+ "gcid:lighting_store": {
+  "th": "ร้านขายอุปกรณ์ไฟฟ้าแสงสว่าง"
+ },
+ "gcid:lingerie_store": {
+  "th": "ร้านชุดชั้นในสตรี"
+ },
+ "gcid:liquor_store": {
+  "th": "ร้านจำหน่ายสุรา"
+ },
+ "gcid:live_music_venue": {
+  "ms": "tempat persembahan muzik",
+  "th": "สถานที่แสดงดนตรีสด"
+ },
+ "gcid:local_government_office": {
+  "th": "สถานที่ราชการในท้องถิ่น"
+ },
+ "gcid:locksmith": {
+  "id": "Tukang kunci komersial",
+  "th": "ช่างกุญแจ"
+ },
+ "gcid:lottery_retailer": {
+  "id": "Lotre",
+  "ms": "Loteri",
+  "th": "ร้านขายล็อตเตอรี่"
+ },
+ "gcid:luggage_store": {
+  "th": "ร้านกระเป๋า"
+ },
+ "gcid:luxury_goods_store": {
+  "id": "Barang-barang mewah",
+  "th": "สินค้าฟุ่มเฟือย"
+ },
+ "gcid:luxury_hotel": {},
+ "gcid:manufacturer": {
+  "id": "produsen",
+  "ms": "pengilang",
+  "th": "ผู้ผลิต"
+ },
+ "gcid:market": {
+  "id": "pasar",
+  "ms": "tempat pasar",
+  "th": "ตลาด"
+ },
+ "gcid:marketing_consultant": {
+  "th": "ที่ปรึกษาด้านการตลาด"
+ },
+ "gcid:massage_therapist": {
+  "th": "พนักงานนวด"
+ },
+ "gcid:medical_center": {
+  "id": "fasilitas medis",
+  "ms": "kemudahan perubatan",
+  "th": "ศูนย์การแพทย์"
+ },
+ "gcid:medical_clinic": {
+  "id": "klinik",
+  "ms": "klinik",
+  "th": "คลินิกการแพทย์"
+ },
+ "gcid:medical_laboratory": {
+  "id": "Laboratorium klinik",
+  "th": "ห้องปฏิบัติการทางการแพทย์"
+ },
+ "gcid:mens_clothing_store": {
+  "th": "ร้านเสื้อผ้าบุรุษ"
+ },
+ "gcid:money_transfer_service": {
+  "id": "Remitansi",
+  "th": "บริการโอนเงิน"
+ },
+ "gcid:monorail_station": {},
+ "gcid:mosque": {
+  "id": "masjid",
+  "ms": "masjid",
+  "th": "มัสยิด"
+ },
+ "gcid:motorcycle_dealer": {
+  "th": "ตัวแทนจำหน่ายรถจักรยานยนต์"
+ },
+ "gcid:movie_rental_kiosk": {
+  "th": "บูธเช่าภาพยนตร์อัตโนมัติ"
+ },
+ "gcid:movie_theater": {
+  "id": "Bioskop",
+  "ms": "pawagam",
+  "th": "โรงภาพยนตร์"
+ },
+ "gcid:moving_and_storage_service": {
+  "th": "บริการขนย้ายและจัดเก็บ"
+ },
+ "gcid:museum": {
+  "id": "Museum",
+  "ms": "muzium",
+  "th": "พิพิธภัณฑ์"
+ },
+ "gcid:music_store": {
+  "th": "ร้านขายเพลง"
+ },
+ "gcid:nail_salon": {
+  "th": "ร้านทำเล็บ"
+ },
+ "gcid:newspaper_publisher": {
+  "ms": "pemilik akhbar",
+  "th": "ผู้ผลิตหนังสือพิมพ์"
+ },
+ "gcid:night_club": {
+  "id": "Klub Malam",
+  "ms": "kelab malam",
+  "th": "ไนท์คลับ"
+ },
+ "gcid:non_governmental_organization": {
+  "id": "Lembaga Swadaya Masyarakat (LSM)",
+  "ms": "pertubuhan bukan kerajaan",
+  "th": "องค์กรภาคเอกชน"
+ },
+ "gcid:non_profit_organization": {
+  "id": "organisasi nirlaba",
+  "ms": "pertubuhan bukan untung",
+  "th": "องค์กรไม่แสวงผลกำไร"
+ },
+ "gcid:notary_public": {
+  "id": "Notaris publik",
+  "th": "เจ้าพนักงานผู้มีอำนาจรับรองเอกสาร"
+ },
+ "gcid:nursing_agency": {
+  "th": "สถานพักฟื้นคนชราและผู้ป่วย"
+ },
+ "gcid:obstetrician": {},
+ "gcid:office_building": {
+  "id": "Bangunan Perkantoran",
+  "ms": "bangunan pejabat",
+  "th": "อาคารสำนักงาน"
+ },
+ "gcid:office_supply_store": {
+  "id": "perlengkapan kantor",
+  "th": "ร้านอุปกรณ์สำนักงาน"
+ },
+ "gcid:optician": {
+  "id": "Ahli optik",
+  "ms": "pakar mata",
+  "th": "ช่างประกอบแว่นสายตา"
+ },
+ "gcid:optometrist": {
+  "th": "นักทัศนมาตร"
+ },
+ "gcid:outdoor_sports_store": {
+  "th": "ร้านอุปกรณ์กีฬากลางแจ้ง"
+ },
+ "gcid:packaging_supply_store": {
+  "id": "Pengemasan",
+  "ms": "pembungkusan",
+  "th": "ร้านอุปกรณ์หีบห่อ"
+ },
+ "gcid:paint_store": {
+  "th": "ร้านอุปกรณ์ทาสี"
+ },
+ "gcid:park": {
+  "id": "taman",
+  "ms": "taman",
+  "th": "อุทยาน"
+ },
+ "gcid:parking_lot": {
+  "id": "Pelataran parkir",
+  "ms": "tempat letak kereta",
+  "th": "ที่จอดรถ"
+ },
+ "gcid:pediatrician": {
+  "th": "กุมารแพทย์"
+ },
+ "gcid:performing_arts_theater": {
+  "id": "teater",
+  "ms": "Panggung",
+  "th": "โรงละคร"
+ },
+ "gcid:pest_control_service": {
+  "id": "Jasa pengendalian hama",
+  "th": "บริการกำจัดแมลง"
+ },
+ "gcid:pet_store": {
+  "id": "Toko hewan peliharaan",
+  "th": "ร้านขายสัตว์เลี้ยง"
+ },
+ "gcid:pharmacy": {
+  "id": "Apotek",
+  "ms": "Farmasi",
+  "th": "ร้านขายยา"
+ },
+ "gcid:photography": {
+  "id": "fotografi",
+  "ms": "fotografi",
+  "th": "การถ่ายภาพ"
+ },
+ "gcid:physical_therapist": {
+  "ms": "JURUPULIH ANGGOTA"
+ },
+ "gcid:pizza_restaurant": {
+  "id": "pizzeria",
+  "th": "ร้านพิซซ่า"
+ },
+ "gcid:place_of_worship": {
+  "id": "tempat ibadah",
+  "ms": "struktur penyembahan",
+  "th": "สถานที่ประกอบพิธีกรรมทางศาสนา"
+ },
+ "gcid:playroom": {},
+ "gcid:plumber": {
+  "id": "Tukang pipa komersial",
+  "th": "ช่างประปา"
+ },
+ "gcid:police_station": {
+  "id": "kantor polisi",
+  "ms": "balai polis"
+ },
+ "gcid:pool_hall": {
+  "th": "ร้านสนุกเกอร์"
+ },
+ "gcid:post_office": {
+  "id": "kantor pos",
+  "ms": "pejabat pos",
+  "th": "ที่ทำการไปรษณีย์"
+ },
+ "gcid:preschool": {
+  "ms": "prasekolah"
+ },
+ "gcid:print_shop": {
+  "th": "ร้านงานพิมพ์"
+ },
+ "gcid:property_management_company": {
+  "ms": "pengurusan hartanah",
+  "th": "บริษัทบริหารทรัพย์สิน"
+ },
+ "gcid:psychologist": {
+  "id": "psikolog",
+  "ms": "ahli psikologi",
+  "th": "นักจิตวิทยา"
+ },
+ "gcid:pub": {
+  "th": "ผับ"
+ },
+ "gcid:public_school": {
+  "id": "sekolah negeri",
+  "ms": "sekolah awam",
+  "th": "โรงเรียนรัฐ"
+ },
+ "gcid:public_swimming_pool": {
+  "th": "สระว่ายน้ำสาธารณะ"
+ },
+ "gcid:publisher": {
+  "id": "penerbit",
+  "ms": "penerbit",
+  "th": "สำนักพิมพ์"
+ },
+ "gcid:race_course": {
+  "th": "สนามแข่ง"
+ },
+ "gcid:real_estate": {
+  "id": "lahan yasan",
+  "ms": "Hartanah",
+  "th": "อสังหาริมทรัพย์"
+ },
+ "gcid:real_estate_agency": {
+  "th": "ตัวแทนอสังหาริมทรัพย์"
+ },
+ "gcid:real_estate_consultant": {
+  "th": "ที่ปรึกษาอสังหาริมทรัพย์"
+ },
+ "gcid:real_estate_developer": {
+  "th": "นักพัฒนาอสังหาริมทรัพย์"
+ },
+ "gcid:renovation_contractor": {
+  "id": "renovasi",
+  "th": "การปรับปรุงใหม่"
+ },
+ "gcid:resort": {
+  "id": "pesanggrahan",
+  "ms": "tempat peranginan",
+  "th": "สถานพักตากอากาศ"
+ },
+ "gcid:restaurant": {
+  "id": "Restoran",
+  "ms": "kedai makan",
+  "th": "ร้านอาหาร"
+ },
+ "gcid:rug_store": {},
+ "gcid:sandwich_shop": {
+  "th": "ร้านแซนด์วิช"
+ },
+ "gcid:savings_bank": {
+  "th": "ธนาคารออมสิน"
+ },
+ "gcid:school": {
+  "id": "Sekolah",
+  "ms": "sekolah",
+  "th": "โรงเรียน"
+ },
+ "gcid:seafood_restaurant": {
+  "th": "ภัตตาคารอาหารทะเล"
+ },
+ "gcid:security_guard_service": {
+  "id": "Satuan Pengamanan",
+  "ms": "pengawal keselamatan",
+  "th": "บริการรักษาความปลอดภัย"
+ },
+ "gcid:security_system_supplier": {
+  "id": "Alarm pengaman",
+  "th": "ร้านจำหน่ายอุปกรณ์ระบบรักษาความปลอดภัย"
+ },
+ "gcid:senior_citizen_center": {
+  "th": "ศูนย์พลเมืองอาวุโส"
+ },
+ "gcid:shipping_and_mailing": {},
+ "gcid:shipping_and_mailing_service": {
+  "th": "บริการจัดส่งพัสดุและไปรษณีย์"
+ },
+ "gcid:shoe_store": {
+  "th": "ร้านรองเท้า"
+ },
+ "gcid:shopping_mall": {
+  "id": "pusat perbelanjaan",
+  "ms": "pusat beli-belah",
+  "th": "ศูนย์การค้า"
+ },
+ "gcid:software_company": {
+  "ms": "syarikat perisian",
+  "th": "บริษัทซอฟท์แวร์"
+ },
+ "gcid:spa": {
+  "th": "สปา"
+ },
+ "gcid:sporting_goods_store": {
+  "th": "ร้านอุปกรณ์กีฬา"
+ },
+ "gcid:sports_activity_location": {
+  "id": "tempat olahraga",
+  "th": "สถานที่จัดกีฬา"
+ },
+ "gcid:sportswear_store": {
+  "ms": "pakaian sukan",
+  "th": "ร้านชุดกีฬา"
+ },
+ "gcid:squash_court": {
+  "ms": "gelanggang skuasy",
+  "th": "สนามสควอช"
+ },
+ "gcid:stadium": {
+  "id": "stadion",
+  "ms": "stadium",
+  "th": "สนามกีฬา"
+ },
+ "gcid:stationery_store": {
+  "th": "ร้านเครื่องเขียน"
+ },
+ "gcid:store": {
+  "id": "toko",
+  "ms": "kedai",
+  "th": "ร้านค้า"
+ },
+ "gcid:student_dormitory": {
+  "id": "Asrama siswa"
+ },
+ "gcid:subway_station": {
+  "id": "stasiun kereta api metro",
+  "ms": "stesen metro"
+ },
+ "gcid:supermarket": {
+  "id": "Toko Swalayan",
+  "ms": "Pasar raya",
+  "th": "ซูเปอร์มาร์เก็ต"
+ },
+ "gcid:surf_spot": {},
+ "gcid:table_tennis_facility": {
+  "id": "tenis meja",
+  "ms": "ping pong",
+  "th": "สนามปิงปอง"
+ },
+ "gcid:tailor": {
+  "id": "Penjahit",
+  "th": "ช่างตัดเสื้อผ้า"
+ },
+ "gcid:tattoo_shop": {
+  "th": "ร้านสัก"
+ },
+ "gcid:tax_consultant": {
+  "th": "ที่ปรึกษาด้านภาษี"
+ },
+ "gcid:taxi_service": {
+  "th": "บริการแท็กซี่"
+ },
+ "gcid:telecommunications_equipment_supplier": {
+  "id": "alat telekomunikasi",
+  "th": "ผู้จำหน่ายอุปกรณ์การสื่อสารโทรคมนาคม"
+ },
+ "gcid:telecommunications_service_provider": {
+  "th": "บริษัทโทรคมนาคม"
+ },
+ "gcid:telephone_company": {
+  "id": "perusahaan telekomunikasi",
+  "th": "บริษัทโทรศัพท์"
+ },
+ "gcid:tennis_center": {},
+ "gcid:textile_merchant": {},
+ "gcid:thai_restaurant": {
+  "th": "ภัตตาคารอาหารไทย"
+ },
+ "gcid:theme_park": {
+  "th": "ธีมพาร์ค"
+ },
+ "gcid:tire_shop": {
+  "th": "ร้านยางรถยนต์"
+ },
+ "gcid:tobacco_shop": {
+  "th": "ผู้ขายผลิตภัณฑ์ยาสูบ"
+ },
+ "gcid:toll_station": {
+  "ms": "plaza tol",
+  "th": "บูธเก็บค่าผ่านทาง"
+ },
+ "gcid:tourist_attraction": {
+  "id": "objek wisata",
+  "ms": "tarikan pelancong",
+  "th": "สถานที่ท่องเที่ยว"
+ },
+ "gcid:tourist_information_center": {
+  "ms": "pejabat pelancongan",
+  "th": "ศูนย์ข้อมูลนักท่องเที่ยว"
+ },
+ "gcid:toy_store": {
+  "th": "ร้านของเล่น"
+ },
+ "gcid:trading_company": {},
+ "gcid:train_station": {
+  "id": "stasiun kereta api",
+  "ms": "stesen kereta api",
+  "th": "สถานีรถไฟ"
+ },
+ "gcid:training_center": {
+  "th": "ศูนย์ฝึกอบรม"
+ },
+ "gcid:transit_station": {
+  "id": "Stasiun",
+  "ms": "stesen"
+ },
+ "gcid:transportation_service": {
+  "id": "perusahaan transportasi",
+  "ms": "syarikat pengangkutan"
+ },
+ "gcid:travel_agency": {
+  "id": "Biro perjalanan",
+  "ms": "Agensi pelancongan",
+  "th": "บริษัทท่องเที่ยว"
+ },
+ "gcid:tutoring_service": {
+  "th": "บริการกวดวิชา"
+ },
+ "gcid:university": {
+  "id": "universitas",
+  "ms": "universiti",
+  "th": "มหาวิทยาลัย"
+ },
+ "gcid:used_car_dealer": {
+  "th": "ผู้ค้ารถยนต์มือสอง"
+ },
+ "gcid:veterinarian": {
+  "id": "dokter hewan",
+  "ms": "doktor haiwan",
+  "th": "สัตวแพทย์"
+ },
+ "gcid:video_arcade": {
+  "id": "Pusat arcade",
+  "ms": "Arked permainan video",
+  "th": "ร้านวิดีโอเกม"
+ },
+ "gcid:video_game_store": {
+  "th": "ร้านขายวิดีโอเกม"
+ },
+ "gcid:wallpaper_store": {
+  "th": "ร้านวอลล์เปเปอร์"
+ },
+ "gcid:waste_management_service": {
+  "id": "pengumpulan sampah",
+  "th": "บริการจัดการน้ำ"
+ },
+ "gcid:watch_store": {
+  "th": "ร้านนาฬิกาข้อมือ"
+ },
+ "gcid:water_park": {
+  "id": "Taman air",
+  "ms": "taman tema air",
+  "th": "สวนน้ำ"
+ },
+ "gcid:website_designer": {
+  "th": "ออกแบบเว็บไซต์"
+ },
+ "gcid:wedding_photographer": {
+  "th": "ช่างภาพงานแต่งงาน"
+ },
+ "gcid:wedding_planner": {
+  "id": "Perencana pernikahan",
+  "ms": "wedding planner",
+  "th": "นักวางแผนงานแต่งงาน"
+ },
+ "gcid:wedding_service": {
+  "id": "Perencana pernikahan",
+  "ms": "wedding planner",
+  "th": "บริการจัดงานแต่งงาน"
+ },
+ "gcid:wholesaler": {
+  "th": "ผู้ค้าส่ง"
+ },
+ "gcid:wine_store": {
+  "th": "ร้านไวน์"
+ },
+ "gcid:winery": {
+  "th": "โรงผลิตไวน์"
+ },
+ "gcid:womens_clothing_store": {
+  "th": "ร้านเสื้อผ้าสตรี"
+ },
+ "gcid:zoo": {
+  "id": "kebun binatang",
+  "ms": "zoo",
+  "th": "สวนสัตว์"
+ }
+}

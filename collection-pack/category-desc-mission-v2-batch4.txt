@@ -1,0 +1,107 @@
+# MISSION — Google category descriptions (EN/ID/TH) + name gap-fill, batch 4 of 4
+
+You are writing SEO category descriptions for contact.page, a business directory.
+
+CONTEXT: contact.page's category authority is now GOOGLE. The names below are HARVESTED, not generated — Google's official localized category names (PlePer's mirror of Google's GBP category list, refreshed every ~3 days), human Wikidata labels, and our own Master-tab Indonesian labels. They are ground truth. NEVER regenerate, "improve", or re-translate a provided name — copy it EXACTLY.
+
+YOUR JOB per category:
+1. desc_en — one description in English, 140-160 characters.
+2. desc_id — one description in Bahasa Indonesia, 140-160 characters.
+3. desc_th — one description in Thai, 140-160 characters.
+4. Fill ONLY the name fields marked MISSING. Leave every provided name untouched.
+
+STYLE (non-negotiable):
+- Buyer language: sell the outcome the buyer wants, not the company.
+- Vendor-neutral. NEVER use 'recommended' or any synonym implying endorsement.
+- 140-160 characters per description (meta-description length).
+- No contact details, no phone numbers, no invented facts (no counts, no 'best', no city claims).
+- Terminology MUST match the harvested names' vocabulary: if the id name says "Kontraktor", desc_id uses "Kontraktor", never "Pemborong". Same for Thai.
+- For ms gap-fills: the Indonesian term is usually reusable as-is (mutually intelligible) — apply standard Malay spelling where it differs. Do NOT invent a new term when the id one works.
+- Malay (ms) DESCRIPTIONS are a later batch — this mission writes no desc_ms.
+
+## Categories (name shown where harvested; MISSING = you fill it)
+
+- gcid:agriculture | EN: agriculture | ID: pertanian | MS: pertanian | TH: เกษตรกรรม | MISSING: (none)
+- gcid:american_restaurant | EN: American restaurant | ID: (empty) | MS: (empty) | TH: ภัตตาคารอาหารอเมริกัน | MISSING: id, ms
+- gcid:apartment_building | EN: Apartment building | ID: bangunan | MS: (empty) | TH: บริษัทบริหารอพาร์ทเม้นท์ | MISSING: ms
+- gcid:art_gallery | EN: Art gallery | ID: galeri seni | MS: galeri seni | TH: ห้องแสดงงานศิลปะ | MISSING: (none)
+- gcid:baby_store | EN: Baby store | ID: (empty) | MS: (empty) | TH: ร้านสินค้าเด็กอ่อน | MISSING: id, ms
+- gcid:bar | EN: Bar | ID: Bar | MS: (empty) | TH: บาร์ | MISSING: ms
+- gcid:beauty_salon | EN: Beauty salon | ID: Salon | MS: (empty) | TH: สถานเสริมความงาม | MISSING: ms
+- gcid:bowling_alley | EN: Bowling alley | ID: (empty) | MS: (empty) | TH: โรงโบว์ลิ่ง | MISSING: id, ms
+- gcid:budget_hotel | EN: budget hotel | ID: (empty) | MS: (empty) | TH: (empty) | MISSING: id, ms, th
+- gcid:bus_charter | EN: Bus charter | ID: (empty) | MS: (empty) | TH: บริษัทรถบัสเช่าเหมาลำ | MISSING: id, ms
+- gcid:business_management_consultant | EN: Business management consultant | ID: konsultan manajemen | MS: (empty) | TH: ที่ปรึกษาด้านการจัดการธุรกิจ | MISSING: ms
+- gcid:car_rental_agency | EN: Car rental agency | ID: persewaan mobil | MS: Kereta sewa | TH: บริษัทรถเช่า | MISSING: (none)
+- gcid:catering_service | EN: catering service | ID: (empty) | MS: (empty) | TH: รับจัดอาหารนอกสถานที่ | MISSING: id, ms
+- gcid:chinese_restaurant | EN: Chinese restaurant | ID: (empty) | MS: (empty) | TH: ภัตตาคารอาหารจีน | MISSING: id, ms
+- gcid:clothing_store | EN: Clothing store | ID: Toko Pakaian | MS: (empty) | TH: ร้านเสื้อผ้า | MISSING: ms
+- gcid:commercial_printer | EN: Commercial printer | ID: (empty) | MS: (empty) | TH: โรงพิมพ์ | MISSING: id, ms
+- gcid:conference_center | EN: Conference center | ID: Pusat konvensi | MS: pusat konvensyen | TH: ศูนย์ประชุม | MISSING: (none)
+- gcid:convenience_store | EN: Convenience store | ID: Toko kelontong | MS: Kedai serbaneka | TH: ร้านสะดวกซื้อ | MISSING: (none)
+- gcid:county_government_office | EN: County government office | ID: (empty) | MS: (empty) | TH: สำนักงานสภาองค์กรส่วนท้องถิ่น | MISSING: id, ms
+- gcid:currency_exchange_service | EN: Currency exchange service | ID: (empty) | MS: (empty) | TH: บริการรับแลกเปลี่ยนเงินตรา | MISSING: id, ms
+- gcid:deli | EN: Deli | ID: Deli | MS: Deli | TH: ร้านเดลี | MISSING: (none)
+- gcid:dermatologist | EN: Dermatologist | ID: (empty) | MS: (empty) | TH: แพทย์ผู้เชี่ยวชาญด้านโรคผิวหนัง | MISSING: id, ms
+- gcid:dive_shop | EN: Dive shop | ID: (empty) | MS: (empty) | TH: ร้านอุปกรณ์ดำน้ำ | MISSING: id, ms
+- gcid:dry_cleaner | EN: Dry cleaner | ID: (empty) | MS: (empty) | TH: ร้านซักแห้ง | MISSING: id, ms
+- gcid:electronics_store | EN: Electronics store | ID: Toko Elektronik | MS: (empty) | TH: ร้านอุปกรณ์อิเล็กทรอนิกส์ | MISSING: ms
+- gcid:engineering_consultant | EN: Engineering consultant | ID: (empty) | MS: (empty) | TH: ที่ปรึกษาด้านวิศวกรรม | MISSING: id, ms
+- gcid:equipment_rental_agency | EN: Equipment rental agency | ID: (empty) | MS: (empty) | TH: สำนักงานให้เช่าอุปกรณ์ | MISSING: id, ms
+- gcid:event_venue | EN: Event venue | ID: (empty) | MS: tempat acara | TH: สถานที่จัดกิจกรรม | MISSING: id
+- gcid:family_practice_physician | EN: Family practice physician | ID: (empty) | MS: (empty) | TH: แพทย์เวชปฏิบัติครอบครัว | MISSING: id, ms
+- gcid:feng_shui_consultant | EN: Feng shui consultant | ID: Feng Shui | MS: Feng shui | TH: ที่ปรึกษาด้านฮวงจุ้ย | MISSING: (none)
+- gcid:fire_station | EN: Fire station | ID: Stasiun pemadam kebakaran | MS: balai bomba | TH: สถานีดับเพลิง | MISSING: (none)
+- gcid:freight_forwarding_service | EN: Freight forwarding service | ID: Jasa angkutan & logistik | MS: (empty) | TH: บริการขนส่งสินค้า | MISSING: ms
+- gcid:gas_station | EN: Gas station | ID: Pom bensin/SPBU | MS: (empty) | TH: สถานีบริการน้ำมัน | MISSING: ms
+- gcid:goldsmith | EN: Goldsmith | ID: Goldsmith | MS: Goldsmith | TH: ช่างทอง | MISSING: (none)
+- gcid:government_office | EN: Government office | ID: jabatan politik | MS: jawatan awam | TH: สถานที่ราชการ | MISSING: (none)
+- gcid:guest_house | EN: Guest house | ID: wisma | MS: (empty) | TH: เกสท์เฮ้าส์ | MISSING: ms
+- gcid:health_food_store | EN: Health food store | ID: (empty) | MS: (empty) | TH: ร้านอาหารเพื่อสุขภาพ | MISSING: id, ms
+- gcid:hospital | EN: Hospital | ID: Rumah Sakit | MS: hospital | TH: โรงพยาบาล | MISSING: (none)
+- gcid:housing_development | EN: Housing development | ID: (empty) | MS: Pembangunan perumahan | TH: โครงการที่อยู่อาศัย | MISSING: id
+- gcid:industrial_area | EN: industrial area | ID: Kawasan industri | MS: Taman industri | TH: (empty) | MISSING: th
+- gcid:interior_designer | EN: Interior designer | ID: (empty) | MS: pereka bentuk dalaman | TH: นักออกแบบตกแต่งภายใน | MISSING: id
+- gcid:italian_restaurant | EN: Italian restaurant | ID: (empty) | MS: (empty) | TH: ร้านอาหารอิตาเลียน | MISSING: id, ms
+- gcid:korean_restaurant | EN: Korean restaurant | ID: (empty) | MS: (empty) | TH: ภัตตาคารอาหารเกาหลี | MISSING: id, ms
+- gcid:legal_services | EN: Legal services | ID: (empty) | MS: (empty) | TH: บริการทางกฎหมาย | MISSING: id, ms
+- gcid:liquor_store | EN: Liquor store | ID: (empty) | MS: (empty) | TH: ร้านจำหน่ายสุรา | MISSING: id, ms
+- gcid:lottery_retailer | EN: Lottery retailer | ID: Lotre | MS: Loteri | TH: ร้านขายล็อตเตอรี่ | MISSING: (none)
+- gcid:manufacturer | EN: Manufacturer | ID: produsen | MS: pengilang | TH: ผู้ผลิต | MISSING: (none)
+- gcid:medical_center | EN: Medical Center | ID: fasilitas medis | MS: kemudahan perubatan | TH: ศูนย์การแพทย์ | MISSING: (none)
+- gcid:money_transfer_service | EN: Money transfer service | ID: Remitansi | MS: (empty) | TH: บริการโอนเงิน | MISSING: ms
+- gcid:movie_rental_kiosk | EN: Movie rental kiosk | ID: (empty) | MS: (empty) | TH: บูธเช่าภาพยนตร์อัตโนมัติ | MISSING: id, ms
+- gcid:music_store | EN: Music store | ID: (empty) | MS: (empty) | TH: ร้านขายเพลง | MISSING: id, ms
+- gcid:non_governmental_organization | EN: non governmental organization | ID: Lembaga Swadaya Masyarakat (LSM) | MS: pertubuhan bukan kerajaan | TH: องค์กรภาคเอกชน | MISSING: (none)
+- gcid:obstetrician | EN: obstetrician | ID: (empty) | MS: (empty) | TH: (empty) | MISSING: id, ms, th
+- gcid:optometrist | EN: Optometrist | ID: (empty) | MS: (empty) | TH: นักทัศนมาตร | MISSING: id, ms
+- gcid:park | EN: Park | ID: taman | MS: taman | TH: อุทยาน | MISSING: (none)
+- gcid:pest_control_service | EN: Pest control service | ID: Jasa pengendalian hama | MS: (empty) | TH: บริการกำจัดแมลง | MISSING: ms
+- gcid:physical_therapist | EN: Physical therapist | ID: (empty) | MS: JURUPULIH ANGGOTA | TH: (empty) | MISSING: id, th
+- gcid:plumber | EN: Plumber | ID: Tukang pipa komersial | MS: (empty) | TH: ช่างประปา | MISSING: ms
+- gcid:preschool | EN: Preschool | ID: (empty) | MS: prasekolah | TH: (empty) | MISSING: id, th
+- gcid:pub | EN: Pub | ID: (empty) | MS: (empty) | TH: ผับ | MISSING: id, ms
+- gcid:race_course | EN: race course | ID: (empty) | MS: (empty) | TH: สนามแข่ง | MISSING: id, ms
+- gcid:real_estate_developer | EN: Real estate developer | ID: (empty) | MS: (empty) | TH: นักพัฒนาอสังหาริมทรัพย์ | MISSING: id, ms
+- gcid:rug_store | EN: Rug store | ID: (empty) | MS: (empty) | TH: (empty) | MISSING: id, ms, th
+- gcid:seafood_restaurant | EN: Seafood restaurant | ID: (empty) | MS: (empty) | TH: ภัตตาคารอาหารทะเล | MISSING: id, ms
+- gcid:shipping_and_mailing | EN: shipping and mailing | ID: (empty) | MS: (empty) | TH: (empty) | MISSING: id, ms, th
+- gcid:software_company | EN: Software company | ID: (empty) | MS: syarikat perisian | TH: บริษัทซอฟท์แวร์ | MISSING: id
+- gcid:sportswear_store | EN: Sportswear store | ID: (empty) | MS: pakaian sukan | TH: ร้านชุดกีฬา | MISSING: id
+- gcid:store | EN: Store | ID: toko | MS: kedai | TH: ร้านค้า | MISSING: (none)
+- gcid:surf_spot | EN: surf spot | ID: (empty) | MS: (empty) | TH: (empty) | MISSING: id, ms, th
+- gcid:tax_consultant | EN: Tax consultant | ID: (empty) | MS: (empty) | TH: ที่ปรึกษาด้านภาษี | MISSING: id, ms
+- gcid:telephone_company | EN: Telephone company | ID: perusahaan telekomunikasi | MS: (empty) | TH: บริษัทโทรศัพท์ | MISSING: ms
+- gcid:theme_park | EN: Theme park | ID: (empty) | MS: (empty) | TH: ธีมพาร์ค | MISSING: id, ms
+- gcid:tourist_attraction | EN: Tourist attraction | ID: objek wisata | MS: tarikan pelancong | TH: สถานที่ท่องเที่ยว | MISSING: (none)
+- gcid:train_station | EN: train station | ID: stasiun kereta api | MS: stesen kereta api | TH: สถานีรถไฟ | MISSING: (none)
+- gcid:travel_agency | EN: Travel agency | ID: Biro perjalanan | MS: Agensi pelancongan | TH: บริษัทท่องเที่ยว | MISSING: (none)
+- gcid:veterinarian | EN: Veterinarian | ID: dokter hewan | MS: doktor haiwan | TH: สัตวแพทย์ | MISSING: (none)
+- gcid:waste_management_service | EN: Waste management service | ID: pengumpulan sampah | MS: (empty) | TH: บริการจัดการน้ำ | MISSING: ms
+- gcid:wedding_photographer | EN: Wedding photographer | ID: (empty) | MS: (empty) | TH: ช่างภาพงานแต่งงาน | MISSING: id, ms
+- gcid:wine_store | EN: Wine store | ID: (empty) | MS: (empty) | TH: ร้านไวน์ | MISSING: id, ms
+
+## Output
+Write the JSON array to category-desc-batch4.json in the current directory, one object per category:
+{"gcid": "...", "name_en": "...", "name_id": "...", "name_ms": "...", "name_th": "...", "desc_en": "...", "desc_id": "...", "desc_th": "..."}
+Copy every harvested name exactly as shown. Write a name only for fields marked MISSING. All 79 categories, valid JSON, no truncation, no commentary.
