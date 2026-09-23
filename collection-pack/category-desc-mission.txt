@@ -1,0 +1,60 @@
+# MISSION — category descriptions (TH / ID / ZH) + missing labels
+
+You are writing SEO category descriptions for contact.page, a business directory.
+For EVERY category below (35 total, including the 3 parent buckets), write:
+1. desc_th — 1-2 sentence description in Thai
+2. desc_id — 1-2 sentence description in Bahasa Indonesia
+3. desc_zh — 1-2 sentence description in Simplified Chinese
+4. Fill any EMPTY label_th / label_id / label_zh with the correct category name
+   in that language (stay consistent with the labels already present for siblings).
+
+## Style rules (non-negotiable)
+- Buyer language: sell the outcome the buyer wants, not the company.
+- Vendor-neutral. NEVER use 'recommended' or any synonym implying endorsement.
+- 140-160 characters per description (meta-description length).
+- No contact details, no phone numbers, no invented facts (no counts, no 'best', no city claims).
+- Terminology must match the existing label_* values for sibling categories.
+- Parent buckets (cat-home-services, cat-professional, cat-industrial) get broader
+  descriptions covering what lives under them.
+
+## Categories (label shown where already translated; empty = you fill it)
+- cat-home-services | EN: Home & construction services | TH: (empty) | ID: (empty) | ZH: (empty)
+- cat-professional | EN: Professional services | TH: (empty) | ID: (empty) | ZH: (empty)
+- cat-industrial | EN: Industrial & trade supply | TH: (empty) | ID: (empty) | ZH: (empty)
+- solar-installers | EN: Solar panel installers | TH: ช่างติดตั้งแผงโซลาร์เซลล์ | ID: Pemasang panel surya | ZH: 太阳能板安装商
+- epoxy-flooring | EN: Epoxy flooring contractors | TH: ผู้รับเหมาพื้นอีพ็อกซี | ID: Kontraktor lantai epoksi | ZH: 环氧地坪承包商
+- industrial-refrigeration | EN: Cold room & refrigeration contractors | TH: ผู้รับเหมาห้องเย็นและระบบทำความเย็น | ID: Kontraktor cold storage & pendingin | ZH: 冷库制冷承包商
+- commercial-plumbing | EN: Commercial plumbers | TH: ช่างประปาเชิงพาณิชย์ | ID: Tukang pipa komersial | ZH: 商业管道工
+- commercial-cleaning | EN: Commercial cleaning services | TH: บริการทำความสะอาดเชิงพาณิชย์ | ID: Jasa kebersihan komersial | ZH: 商业清洁服务
+- pest-control | EN: Pest control services | TH: บริการกำจัดแมลงและสัตว์รบกวน | ID: Jasa pengendalian hama | ZH: 虫害控制服务
+- hvac | EN: Commercial HVAC contractors | TH: ผู้รับเหมาระบบปรับอากาศและระบายอากาศเชิงพาณิชย์ | ID: Kontraktor HVAC komersial | ZH: 商业暖通空调承包商
+- electricians | EN: Commercial electricians | TH: ช่างไฟฟ้าเชิงพาณิชย์ | ID: Teknisi listrik komersial | ZH: 商业电工
+- roofers | EN: Commercial roofing contractors | TH: ผู้รับเหมาหลังคาเชิงพาณิชย์ | ID: Kontraktor atap komersial | ZH: 商业屋顶承包商
+- locksmiths | EN: Commercial locksmiths | TH: ช่างทำกุญแจเชิงพาณิชย์ | ID: Tukang kunci komersial | ZH: 商业锁匠
+- movers | EN: Commercial movers | TH: บริการขนย้ายเชิงพาณิชย์ | ID: Jasa pindahan komersial | ZH: 商业搬家服务
+- fire-safety | EN: Fire safety services | TH: บริการความปลอดภัยด้านอัคคีภัย | ID: Jasa keselamatan kebakaran | ZH: 消防安全服务
+- elevators | EN: Elevator installation & maintenance | TH: ติดตั้งและซ่อมบำรุงลิฟต์ | ID: Pemasangan & perawatan lift | ZH: 电梯安装与维护
+- scaffolding | EN: Scaffolding services | TH: บริการนั่งร้าน | ID: Jasa scaffolding | ZH: 脚手架服务
+- commercial-doors | EN: Commercial doors & shutters | TH: ประตูและม้วนประตูเชิงพาณิชย์ | ID: Pintu & rolling door komersial | ZH: 商业门与卷帘门
+- grease-traps | EN: Grease trap services | TH: บริการถังดักไขมัน | ID: Jasa grease trap | ZH: 隔油池服务
+- water-treatment | EN: Water treatment services | TH: บริการบำบัดน้ำ | ID: Jasa pengolahan air | ZH: 水处理服务
+- generators | EN: Generator sales & service | TH: จำหน่ายและซ่อมบำรุงเครื่องกำเนิดไฟฟ้า | ID: Penjualan & servis genset | ZH: 发电机销售与维修
+- commercial-landscaping | EN: Commercial landscaping | TH: บริการจัดสวนเชิงพาณิชย์ | ID: Jasa lansekap komersial | ZH: 商业园林绿化
+- immigration-lawyers | EN: Immigration lawyers | TH: ทนายความด้านตรวจคนเข้าเมือง | ID: Pengacara imigrasi | ZH: 移民律师
+- business-lawyers | EN: Business lawyers | TH: ทนายความธุรกิจ | ID: Pengacara bisnis | ZH: 商业律师
+- accountants | EN: Accountants & bookkeepers | TH: นักบัญชีและผู้ทำบัญชี | ID: Akuntan & pembukuan | ZH: 会计与记账
+- business-insurance | EN: Business insurance brokers | TH: นายหน้าประกันภัยธุรกิจ | ID: Broker asuransi bisnis | ZH: 商业保险经纪
+- it-support | EN: IT support services | TH: บริการสนับสนุนด้านไอที | ID: Jasa dukungan IT | ZH: IT技术支持服务
+- commercial-security | EN: Commercial security services | TH: บริการรักษาความปลอดภัยเชิงพาณิชย์ | ID: Jasa keamanan komersial | ZH: 商业安保服务
+- office-space | EN: Office space providers | TH: ผู้ให้บริการพื้นที่สำนักงาน | ID: Penyedia ruang kantor | ZH: 办公空间提供商
+- freight-logistics | EN: Freight & logistics | TH: บริการขนส่งและโลจิสติกส์ | ID: Jasa angkutan & logistik | ZH: 货运与物流
+- commercial-signage | EN: Commercial signage | TH: (empty) | ID: (empty) | ZH: (empty)
+- industrial-coatings | EN: Industrial coatings suppliers | TH: (empty) | ID: (empty) | ZH: (empty)
+- workwear | EN: Workwear & uniforms | TH: (empty) | ID: (empty) | ZH: (empty)
+- industrial-supplies | EN: Industrial supplies | TH: (empty) | ID: (empty) | ZH: (empty)
+- commercial-kitchen | EN: Commercial kitchen equipment | TH: (empty) | ID: (empty) | ZH: (empty)
+
+## Output
+Write the JSON array to category-desc-output.json in the current directory, one object per category:
+{"category_id": "...", "label_th": "...", "label_id": "...", "label_zh": "...", "desc_th": "...", "desc_id": "...", "desc_zh": "..."}
+Copy the existing label when present; write a new one only when empty. All 35, valid JSON.
