@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>GEF Technologies Sdn. Bhd. — v2 layout proposal</title>
+  <meta name="description" content="v2 layout proposal: listing click-through, improved lock screen, contact details. Not production.">
+  <style>
+    :root {
+      --txt: #0f172a; --sub: #475569; --dim: #94a3b8;
+      --bg: #f8fafc; --card: #ffffff; --line: #e2e8f0; --blue: #2563eb;
+      --green: #22c55e; --green-dk: #16a34a; --amber-bg: #fffbeb; --amber-line: #fde68a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg); color: var(--txt); line-height: 1.45;
+      padding: 0 0 40px; max-width: 480px; margin: 0 auto;
+      -webkit-font-smoothing: antialiased;
+    }
+    .vfoot { margin: 26px 0 8px; padding-top: 12px; border-top: 1px solid var(--line); font-size: 10.5px; color: var(--dim); text-align: center; line-height: 2; }
+    .vfoot a { color: var(--dim); text-decoration: underline; cursor: pointer; }
+    .vfoot details { display: inline; }
+    .vfoot summary { display: inline; cursor: pointer; text-decoration: underline; }
+    .vfoot ul { text-align: left; margin: 4px 0 0 18px; color: var(--sub); font-size: 11px; }
+    .screen { display: none; padding: 14px 16px 0; }
+    .screen.on { display: block; }
+    /* ---- shared listing language (v1 system) ---- */
+    .tax { font-size: 11px; font-weight: 700; text-transform: uppercase; color: var(--blue); letter-spacing: 0.5px; margin-bottom: 3px; }
+    h1 { font-size: 22px; line-height: 1.25; font-weight: 800; margin-bottom: 6px; }
+    .bridge { font-size: 13.5px; color: var(--sub); line-height: 1.45; margin-bottom: 12px; }
+    .ad-wrapper { width: 100%; min-height: 266px; margin: 12px 0 16px; display: flex; flex-direction: column; align-items: center; }
+    .ad-tag { font-size: 9px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--dim); margin-bottom: 4px; }
+    .contact-card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 14px; margin-bottom: 14px; }
+    .card-label { font-size: 11px; font-weight: 700; text-transform: uppercase; color: var(--sub); letter-spacing: 0.5px; margin-bottom: 10px; }
+    .inventory { font-size: 13px; color: var(--sub); margin-bottom: 12px; line-height: 1.7; }
+    .inventory b { color: var(--txt); }
+    .btn-unlock {
+      display: block; width: 100%; background: var(--green); color: #fff; font-size: 14px;
+      font-weight: 700; text-align: center; padding: 13px; border-radius: 8px; text-decoration: none;
+      border: none; cursor: pointer;
+    }
+    .trustline { font-size: 11.5px; color: var(--dim); text-align: center; margin-top: 8px; }
+    .trustline .ok { color: var(--green-dk); font-weight: 700; }
+    .jump-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+    .jump-link { background: var(--card); border: 1px solid var(--line); padding: 5px 10px; border-radius: 6px; font-size: 12px; font-weight: 500; color: var(--sub); text-decoration: none; }
+    .facts-box { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px; font-size: 12.5px; margin-bottom: 16px; }
+    .fact-item { padding: 5px 0; border-bottom: 1px solid #f8fafc; }
+    .fact-item:last-child { border-bottom: none; }
+    h2 { font-size: 15px; font-weight: 700; margin: 20px 0 8px; }
+    p.copy { font-size: 13px; color: var(--sub); line-height: 1.5; }
+    footer { margin-top: 24px; border-top: 1px solid var(--line); padding-top: 14px; font-size: 11px; color: var(--dim); text-align: center; }
+    footer a { color: var(--blue); text-decoration: none; }
+    .backlink { display: inline-block; font-size: 13px; color: var(--blue); text-decoration: none; font-weight: 600; margin-bottom: 10px; cursor: pointer; }
+    /* ---- v2: lock screen ---- */
+    .gate-box { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 18px 16px; margin-bottom: 14px; }
+    .gate-title { font-size: 18px; font-weight: 800; margin-bottom: 6px; }
+    .gate-why { font-size: 13px; color: var(--sub); line-height: 1.5; margin-bottom: 14px; }
+    .gate-why b { color: var(--txt); }
+    .masked-list { list-style: none; margin-bottom: 16px; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+    .masked-list li { display: flex; justify-content: space-between; align-items: center; padding: 9px 12px; font-size: 13px; border-bottom: 1px solid #f1f5f9; background: #fff; }
+    .masked-list li:last-child { border-bottom: none; }
+    .masked-list .m { font-family: ui-monospace, monospace; color: var(--sub); }
+    .masked-list .v { font-size: 11px; color: var(--green-dk); font-weight: 700; white-space: nowrap; }
+    .captcha { display: flex; align-items: center; gap: 10px; border: 1px solid var(--line); border-radius: 8px; padding: 12px; margin-bottom: 12px; background: #f8fafc; cursor: pointer; user-select: none; }
+    .captcha .box { width: 22px; height: 22px; border: 2px solid #cbd5e1; border-radius: 4px; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 15px; color: var(--green-dk); font-weight: 800; flex: none; }
+    .captcha.done .box { border-color: var(--green-dk); }
+    .captcha span { font-size: 13px; color: var(--sub); }
+    .captcha small { display: block; font-size: 10.5px; color: var(--dim); }
+    .divider { display: flex; align-items: center; gap: 10px; margin: 16px 0; color: var(--dim); font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .divider::before, .divider::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+    .agent-card { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; padding: 14px; margin-bottom: 14px; }
+    .agent-card .t { font-size: 13.5px; font-weight: 800; margin-bottom: 4px; }
+    .agent-card p { font-size: 12.5px; color: var(--sub); margin-bottom: 10px; line-height: 1.5; }
+    .btn-wa { display: block; text-align: center; background: var(--green-dk); color: #fff; font-weight: 700; font-size: 13.5px; padding: 11px; border-radius: 8px; text-decoration: none; }
+    /* ---- v2: contact details ---- */
+    .verified-line { font-size: 12px; color: var(--green-dk); font-weight: 700; margin-bottom: 12px; }
+    .chan-group { margin-bottom: 16px; }
+    .chan-head { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: var(--sub); margin-bottom: 6px; }
+    .chan { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 11px 12px; margin-bottom: 8px; }
+    .chan .row1 { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 6px; }
+    .chan .num { font-family: ui-monospace, monospace; font-size: 14px; font-weight: 700; }
+    .chan .lbl { font-size: 11px; color: var(--dim); font-weight: 600; }
+    .chan .actions { display: flex; gap: 6px; flex-wrap: wrap; }
+    .mini-btn { border: 1px solid var(--line); background: #f8fafc; border-radius: 6px; padding: 6px 10px; font-size: 12px; font-weight: 700; color: var(--txt); text-decoration: none; cursor: pointer; }
+    .mini-btn.primary { background: var(--green); border-color: var(--green); color: #fff; }
+    .vote { display: flex; align-items: center; gap: 8px; margin-top: 8px; padding-top: 8px; border-top: 1px dashed var(--line); font-size: 11.5px; color: var(--sub); }
+    .vote .ok { color: var(--green-dk); font-weight: 700; }
+    .vote button { border: 1px solid var(--line); background: #fff; border-radius: 20px; padding: 3px 10px; font-size: 11.5px; cursor: pointer; }
+    .addr-box { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 12px; font-size: 13px; color: var(--sub); margin-bottom: 16px; }
+    .report-row { display: flex; gap: 8px; margin-top: 4px; }
+    .report-row a { flex: 1; text-align: center; border: 1px dashed var(--line); border-radius: 8px; padding: 10px; font-size: 12.5px; font-weight: 600; color: var(--sub); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <!-- LISTING v2 proposal | click-through: listing -> lock screen -> contact details | not production -->
+
+  <!-- ============ SCREEN 1 · LISTING ============ -->
+  <section class="screen on" id="s1">
+    <div class="tax">Electric Motor Rewinding &amp; Services • Sungai Buloh</div>
+    <h1>GEF Technologies Sdn. Bhd.</h1>
+    <div class="bridge">📍 21, Jalan S.B Jaya 14, Taman Industri Sungai Buloh Jaya, 47000, Sungai Buloh, Selangor, Malaysia</div>
+    <div class="ad-wrapper">
+      <div class="ad-tag">Advertisement</div>
+      <div style="width:300px;height:250px;background:#eef2f7;border:1px dashed #cbd5e1;border-radius:6px;display:flex;align-items:center;justify-content:center;color:#94a3b8;font-size:12px;">300 × 250</div>
+    </div>
+    <div class="contact-card">
+      <div class="card-label">Contact Information</div>
+      <div class="inventory">
+        📞 <b>2</b> phone numbers · 📠 <b>1</b> fax · ✉️ <b>3</b> emails · 🌐 <b>2</b> websites · 💬 WhatsApp
+      </div>
+      <button class="btn-unlock" data-go="s2">Show contact info →</button>
+      <div class="trustline"><span class="ok">✓</span> Verified 2026-09-22 · the community keeps these numbers honest</div>
+    </div>
+    <div class="jump-bar">
+      <a class="jump-link" data-go="s3">📇 Contact details</a>
+      <span class="jump-link">📍 Map</span>
+    </div>
+    <div class="facts-box">
+      <div class="fact-item"><strong>Address:</strong> 21, Jalan S.B Jaya 14, Taman Industri Sungai Buloh Jaya, 47000, Sungai Buloh, Selangor, Malaysia</div>
+      <div class="fact-item"><strong>Locality:</strong> Sungai Buloh, MY</div>
+      <div class="fact-item"><strong>Source:</strong> Verified listing record</div>
+    </div>
+    <h2>Location</h2>
+    <p class="copy">21, Jalan S.B Jaya 14, Taman Industri Sungai Buloh Jaya, 47000, Sungai Buloh, Selangor, Malaysia, Sungai Buloh, MY</p>
+    <footer>
+      <p>Entity record verified from commercial registry archives.</p>
+      <p style="margin-top: 4px;"><a data-go="s3" style="cursor:pointer;">Suggest an edit</a></p>
+    </footer>
+    <div class="vfoot">v2 proposal · not production · vote counts illustrative · screens
+      <a data-go="s1">1</a> · <a data-go="s2">2</a> · <a data-go="s3">3</a> ·
+      <details><summary>what changed</summary>
+        <ul>
+          <li>CTA black → product green #22c55e (recommended; one-line switch back).</li>
+          <li>Contact card: masked chips → honest inventory preview of what's behind the gate.</li>
+          <li>Consistent naming: "Show contact info" across the flow.</li>
+          <li>Lock screen: the <i>why</i>, masked inventory, skip-the-gate via @newcustomers AI worker.</li>
+          <li>Contact details: no fake-chat bubbles → grouped channel rows; per-number vote; fax copy-only; house agent card; report-dead-number + suggest-edits.</li>
+        </ul>
+      </details>
+    </div>
+  </section>
+
+  <!-- ============ SCREEN 2 · LOCK SCREEN ============ -->
+  <section class="screen" id="s2">
+    <a class="backlink" data-go="s1">← GEF Technologies Sdn. Bhd.</a>
+    <div class="gate-box">
+      <div class="gate-title">Contact info</div>
+      <p class="gate-why">One quick check <b>keeps every number real</b>. Scraped numbers rot, get you scammed, get the business robocalled — this gate is why ours don't.</p>
+      <ul class="masked-list">
+        <li><span>📞 Main number</span><span class="m">+60 3 ••• ••••</span><span class="v">✓ 38 confirm</span></li>
+        <li><span>📞 Tel</span><span class="m">+60 3 ••• ••••</span><span class="v"></span></li>
+        <li><span>📠 Fax</span><span class="m">+60 3 ••• ••••</span><span class="v"></span></li>
+        <li><span>✉️ Emails</span><span class="m">3 on file</span><span class="v"></span></li>
+        <li><span>🌐 Websites</span><span class="m">2 on file</span><span class="v"></span></li>
+        <li><span>💬 WhatsApp</span><span class="m">via main number</span><span class="v"></span></li>
+      </ul>
+      <div class="captcha" id="captcha"><div class="box"></div><span>I'm not a robot<small>one tap — you're human, they're protected</small></span></div>
+      <button class="btn-unlock" data-go="s3">SHOW CONTACT INFO</button>
+      <div class="trustline" style="margin-top:10px;">Verified 2026-09-22 · <span style="color:var(--blue);">Something wrong? Report it</span></div>
+    </div>
+    <div class="divider">or skip the gate</div>
+    <div class="agent-card">
+      <div class="t">🤖 Your AI worker can reach them for you</div>
+      <p>No gate, no forms — ask the worker anything about GEF Technologies on WhatsApp and it handles the rest.</p>
+      <a class="btn-wa" href="https://wa.me/newcustomers">Ask on WhatsApp →</a>
+    </div>
+    <div class="vfoot">v2 proposal · not production · vote counts illustrative · screens
+      <a data-go="s1">1</a> · <a data-go="s2">2</a> · <a data-go="s3">3</a> ·
+      <details><summary>what changed</summary>
+        <ul>
+          <li>CTA black → product green #22c55e (recommended; one-line switch back).</li>
+          <li>Contact card: masked chips → honest inventory preview of what's behind the gate.</li>
+          <li>Consistent naming: "Show contact info" across the flow.</li>
+          <li>Lock screen: the <i>why</i>, masked inventory, skip-the-gate via @newcustomers AI worker.</li>
+          <li>Contact details: no fake-chat bubbles → grouped channel rows; per-number vote; fax copy-only; house agent card; report-dead-number + suggest-edits.</li>
+        </ul>
+      </details>
+    </div>
+  </section>
+
+  <!-- ============ SCREEN 3 · CONTACT DETAILS ============ -->
+  <section class="screen" id="s3">
+    <a class="backlink" data-go="s1">← GEF Technologies Sdn. Bhd.</a>
+    <h1 style="font-size:19px;">Contact info</h1>
+    <div class="verified-line">✓ Verified 2026-09-22 · Sungai Buloh, MY</div>
+
+    <div class="agent-card">
+      <div class="t">🤖 Don't want to call yourself?</div>
+      <p>Your AI worker reaches out for you — tell it what you need on WhatsApp.</p>
+      <a class="btn-wa" href="https://wa.me/newcustomers">Ask on WhatsApp →</a>
+    </div>
+
+    <div class="chan-group">
+      <div class="chan-head">📞 Phone numbers</div>
+      <div class="chan">
+        <div class="row1"><span class="num">+60 3-6142 2287</span><span class="lbl">Main</span></div>
+        <div class="actions">
+          <a class="mini-btn primary" href="tel:+60361422287">Call</a>
+          <a class="mini-btn" href="https://wa.me/60361422287">WhatsApp</a>
+          <button class="mini-btn">Copy</button>
+        </div>
+        <div class="vote"><span class="ok">✓ 38 of 41</span> say this works <span style="flex:1"></span> Does it work? <button>👍</button><button>👎</button></div>
+      </div>
+      <div class="chan">
+        <div class="row1"><span class="num">+60 3-6142 2289</span><span class="lbl">Tel</span></div>
+        <div class="actions">
+          <a class="mini-btn primary" href="tel:+60361422289">Call</a>
+          <button class="mini-btn">Copy</button>
+        </div>
+      </div>
+      <div class="chan">
+        <div class="row1"><span class="num">+60 3-6142 3288</span><span class="lbl">Fax</span></div>
+        <div class="actions">
+          <button class="mini-btn">Copy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="chan-group">
+      <div class="chan-head">✉️ Email</div>
+      <div class="chan">
+        <div class="row1"><span class="num" style="font-size:13px;">ktcheongatgef@gmail.com</span></div>
+        <div class="actions">
+          <a class="mini-btn primary" href="mailto:ktcheongatgef@gmail.com">Email</a>
+          <button class="mini-btn">Copy</button>
+        </div>
+      </div>
+      <div class="chan">
+        <div class="row1"><span class="lbl">+ 2 more emails on the verified record</span></div>
+      </div>
+    </div>
+
+    <div class="chan-group">
+      <div class="chan-head">🌐 Websites</div>
+      <div class="chan">
+        <div class="row1"><span class="num" style="font-size:13px;">gef.com.my</span></div>
+        <div class="actions"><a class="mini-btn" href="https://www.gef.com.my">Open →</a></div>
+      </div>
+      <div class="chan">
+        <div class="row1"><span class="num" style="font-size:13px;">gefelectricmotor.com.my</span></div>
+        <div class="actions"><a class="mini-btn" href="https://gefelectricmotor.com.my">Open →</a></div>
+      </div>
+    </div>
+
+    <div class="chan-group">
+      <div class="chan-head">📍 Address</div>
+      <div class="addr-box">
+        21, Jalan S.B Jaya 14, Taman Industri Sungai Buloh Jaya, 47000, Sungai Buloh, Selangor, Malaysia
+        <div class="actions" style="display:flex;gap:6px;margin-top:8px;">
+          <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=GEF+Technologies+Sungai+Buloh">Google Maps →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="report-row">
+      <a data-go="s1" style="cursor:pointer;">✏️ Suggest an edit</a>
+      <a data-go="s1" style="cursor:pointer;">🚩 Report a dead number</a>
+    </div>
+
+    <footer>
+      <p>Numbers stay real because the community checks them.</p>
+    </footer>
+    <div class="vfoot">v2 proposal · not production · vote counts illustrative · screens
+      <a data-go="s1">1</a> · <a data-go="s2">2</a> · <a data-go="s3">3</a> ·
+      <details><summary>what changed</summary>
+        <ul>
+          <li>CTA black → product green #22c55e (recommended; one-line switch back).</li>
+          <li>Contact card: masked chips → honest inventory preview of what's behind the gate.</li>
+          <li>Consistent naming: "Show contact info" across the flow.</li>
+          <li>Lock screen: the <i>why</i>, masked inventory, skip-the-gate via @newcustomers AI worker.</li>
+          <li>Contact details: no fake-chat bubbles → grouped channel rows; per-number vote; fax copy-only; house agent card; report-dead-number + suggest-edits.</li>
+        </ul>
+      </details>
+    </div>
+  </section>
+
+  <script>
+    function go(id) {
+      document.querySelectorAll('.screen').forEach(s => s.classList.remove('on'));
+      document.getElementById(id).classList.add('on');
+      window.scrollTo(0, 0);
+    }
+    document.querySelectorAll('[data-go]').forEach(el => el.addEventListener('click', e => { e.preventDefault(); go(el.dataset.go); }));
+    document.getElementById('captcha').addEventListener('click', function() {
+      this.classList.toggle('done');
+      this.querySelector('.box').textContent = this.classList.contains('done') ? '✓' : '';
+    });
+  </script>
+</body>
+</html>
